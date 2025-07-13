@@ -62,6 +62,7 @@ app.use('/api/admissions', require('./routers/admissionRoutes'));
 app.use('/api/fees', require('./routers/feesRoutes'));
 app.use('/api/attendance', require('./routers/attendanceRoutes'));
 app.use('/api/dashboard-stats', require('./routers/dashboardStats'));
+app.use('/api/templates', require('./routers/templateRoutes'));
 
 
 // ✅ 404 fallback
