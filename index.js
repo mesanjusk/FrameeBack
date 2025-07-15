@@ -50,6 +50,10 @@ app.use('/api/batches', require('./routers/batchRoutes'));
 app.use('/api/org-categories', require('./routers/orgCategoryRoutes'));
 app.use('/api/education', require('./routers/educationRoutes'));
 app.use('/api/exams', require('./routers/examRoutes'));
+app.use('/api/timeblocks', require('./routers/timeblockRoutes')); // <-- ADD THIS LINE
+app.use('/api/tasks', require('./routers/taskRoutes'));
+
+
 app.use('/api/paymentmode', require('./routers/paymentModeRoutes'));
 
 // ✅ New modular structure for leads, students, admissions
