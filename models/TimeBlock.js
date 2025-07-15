@@ -9,6 +9,7 @@ const TimeBlockSchema = new mongoose.Schema({
   time: String,
   activity: String,
   date: { type: String }, // for one-time
+  assignee: { type: String, default: "Any user" }, // <-- ADDED FIELD
   recurrence: {
     type: {
       type: String, // 'once', 'daily', 'custom'
